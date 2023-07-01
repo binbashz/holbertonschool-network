@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# provides a summary of listening ports, showing the associated PID and program names for each port
+netstat -0
