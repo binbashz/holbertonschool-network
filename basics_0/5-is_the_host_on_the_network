@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Check if an IP address argument is provided
+if [[ $# -eq 0 ]]; then
+    echo "Usage: $0 {IP_ADDRESS}"
+    exit 1
+fi
+
+# Store the provided IP address in a variable
+ip_address=$1
+
+# Use the ping command to send 5 ICMP echo requests to the IP address
+ping -c 5 $ip_address
